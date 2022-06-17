@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:background="@color/white"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="400dp">
+
+    <RelativeLayout
+        android:id="@+id/container_main_dailog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/customer_name_edt_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/customer_no_edt_d"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/customer_name_edt_d"
+            android:layout_height="wrap_content"
+            android:hint="Customer number"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:id="@+id/amount_edt_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:layout_below="@+id/customer_no_edt_d"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/details_edt_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount_edt_d"
+            android:hint="details"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/date_edt_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_edt_d"
+            android:hint="Date"
+            android:inputType="datetime"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit_btn_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_main_dailog"
+        android:layout_centerHorizontal="true"
+        android:text="SUBMIT"/>
+
+</RelativeLayout>
